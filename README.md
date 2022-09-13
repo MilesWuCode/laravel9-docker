@@ -4,7 +4,7 @@
 
 ```sh
 # build
-docker build -f ./Docker/Dockerfile -t laravel9-docker:latest .
+docker build -f ./docker/Dockerfile -t laravel9-docker:latest .
 
 # run
 docker run -d -p 80:80 --name laravel9-docker laravel9-docker:latest
