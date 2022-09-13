@@ -2,10 +2,7 @@
 
 cd /var/www
 
-php artisan config:clear
-php artisan cache:clear
-
-php artisan config:cache
-php artisan route:cache
+php artisan optimize:clear
+php artisan optimize
 
 /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
