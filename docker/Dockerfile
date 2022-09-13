@@ -10,13 +10,15 @@ ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/do
 
 # PHP安裝模組,參考sail
 # docker-php-extension-installer 包含 sqlite3,curl,mbstring,readline
+# 最後安裝opcache
 RUN chmod +x /usr/local/bin/install-php-extensions && \
     install-php-extensions \
     pdo_pgsql gd \
     imap pdo_mysql \
     zip bcmath soap \
     intl \
-    ldap
+    ldap \
+    opcache
 
 # 系統安裝軟體,參考sail,有包含supervisor
 # debian使用default-mysql-client

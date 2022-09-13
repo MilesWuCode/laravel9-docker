@@ -23,4 +23,7 @@ docker stop laravel9-docker && docker rm laravel9-docker
 # app/Console/Commands/ScheduleTestCommand.php
 # app/Console/Kernel.php
 cat /var/www/logs/laravel.log
+
+# OPcache ab test
+ab -t 10 -c 10 http://localhost/
 ```
