@@ -18,6 +18,7 @@ RUN chmod +x /usr/local/bin/install-php-extensions && \
     zip bcmath soap \
     intl \
     ldap \
+    redis \
     opcache
 
 # 系統安裝軟體,參考sail,有包含supervisor
