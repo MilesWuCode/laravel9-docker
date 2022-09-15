@@ -47,6 +47,7 @@ RUN useradd -u 1000 -ms /bin/bash -g www www
 COPY --chown=www:www-data . /var/www
 
 # 專案環境變數
+# 若是多台主機:APP_KEY先準備
 COPY --chown=www:www-data .env.prod /var/www/.env
 
 # 寫入權限:root,www
