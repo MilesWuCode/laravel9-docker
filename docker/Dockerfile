@@ -47,8 +47,7 @@ RUN useradd -u 1000 -ms /bin/bash -g www www
 COPY --chown=www:www-data . /var/www
 
 # 專案環境變數
-# 若有.env.production可省略這行
-# COPY --chown=www:www-data .env.example /var/www/.env
+COPY --chown=www:www-data .env.prod /var/www/.env
 
 # 寫入權限:root,www
 RUN chmod -R ug+w /var/www/storage
