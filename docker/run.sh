@@ -3,6 +3,7 @@
 cd /var/www
 
 php artisan package:discover
+php artisan key:generate
 php artisan optimize:clear
 php artisan optimize
 php artisan event:cache
