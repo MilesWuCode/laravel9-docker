@@ -17,9 +17,10 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')->hourly();
 
-        $schedule->command('test:schedule')
-            ->everyMinute()
-            ->onOneServer();
+        // Test
+        // $schedule->command('test:schedule')
+        //     ->everyMinute()
+        //     ->onOneServer();
     }
 
     /**
